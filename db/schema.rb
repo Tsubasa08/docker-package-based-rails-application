@@ -10,8 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_09_27_235129) do
-  create_table "games", force: :cascade do |t|
+ActiveRecord::Schema[7.0].define(version: 2023_03_05_083950) do
+  create_table "games", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.datetime "date"
     t.string "location"
     t.integer "first_team_id"
@@ -23,8 +23,15 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_27_235129) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "teams", force: :cascade do |t|
+  create_table "teams", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "tweets", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "title"
+    t.text "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

@@ -1,0 +1,11 @@
+p style="color: green" = notice
+
+h1 Tweets
+
+#tweets
+  - @tweets.each do |tweet|
+    == render tweet
+    p
+      = link_to "Show this tweet", tweet
+
+= link_to "New tweet", new_tweet_path

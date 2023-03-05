@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tweets
   resources :games
   resources :teams
   root to: 'welcome#index'
