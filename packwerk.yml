@@ -1,3 +1,6 @@
+enforce_dependencies: true
+
+enforce_privacy: false
 # See: Setting up the configuration file
 # https://github.com/Shopify/packwerk/blob/main/USAGE.md#setting-up-the-configuration-file
 
