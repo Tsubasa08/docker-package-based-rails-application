@@ -70,10 +70,5 @@ group :test do
   gem "webdrivers"
 end
 
-gem 'packwerk', group: [:development, :test]
-gem 'pocky', group: [:development, :test], github: 'shageman/pocky', branch: 'main'
-gem 'rspec-rails', group: [:development, :test]
-gem 'shoulda-matchers', group: [:test]
-gem 'slim-rails'
-gem 'trueskill'
+
 
